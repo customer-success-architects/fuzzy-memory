@@ -1,7 +1,8 @@
 name: Repository Monitor
 
 on: 
-  create:
+  repository_dispatch:
+    types: [created]
     
 jobs:
   repository-created:
@@ -9,4 +10,4 @@ jobs:
     name: Creating Organization Repository
     steps:
       - name: "Hello World"
-        run: echo "Hello World"
+        run: echo "Repository ${{ github.event.repository.nae }} created"
