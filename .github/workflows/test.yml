@@ -2,8 +2,6 @@ name: Repository Monitor
 
 on: 
   repository_dispatch:
-    types: 
-    - created
     
 jobs:
   repository-monitor:
