@@ -1,4 +1,4 @@
-name: Repository Monitor
+name: On Repository Create
 
 on: 
   repository_dispatch:
