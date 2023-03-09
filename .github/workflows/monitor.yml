@@ -10,4 +10,4 @@ jobs:
     name: Creating Organization Repository
     steps:
       - name: "Hello World"
-        run: echo "Repository ${{ github.event.repository.nae }} created"
+        run: echo "Repository ${{ github.event.repository.name }} created"
