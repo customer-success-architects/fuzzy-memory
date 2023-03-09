@@ -2,7 +2,7 @@ name: Repository Monitor
 
 on: 
   repository_dispatch:
-    types: [created]
+    types: [created, on-demand-test]
     
 jobs:
   repository-created:
